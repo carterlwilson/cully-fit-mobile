@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Generate Release APK
-        run: ./gradlew assembleRelease
+        run: flutter build apk
       - name: Sign APK
         uses: r0adkll/sign-android-release@v1
         # ID used to access action output
