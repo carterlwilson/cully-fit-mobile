@@ -1,10 +1,11 @@
-import 'package:cully_strength_app/src/ExercisePage.dart';
-import 'package:cully_strength_app/src/NamePicker.dart';
-import 'package:cully_strength_app/src/NameSelectScreen.dart';
-import 'package:cully_strength_app/src/WorkoutPage.dart';
+import 'package:cully_strength_app/src/Pages/ExercisePage.dart';
+import 'package:cully_strength_app/src/Pages/NameSelectScreen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -13,19 +14,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Routes',
-      initialRoute: '/',
-      routes: {
-        '/': (context) => NameSelectScreen(),
-        '/workout': (context) => WorkoutPage(),
-        '/exercise': (context) => ExercisePage(),
-      }
+      home: NameSelectScreen()
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key}) : super(key: key);
+  MyHomePage({Key? key}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -102,11 +97,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: 500,
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: NamePicker()
-                        ),
-                    ],
                   ),
                 ),
                 Container(

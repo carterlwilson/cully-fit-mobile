@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "247341957335",
+    "project_id": "cullyfitness",
+    "storage_bucket": "cullyfitness.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:247341957335:android:b8397bbbe4d49f12e5f092",
+        "android_client_info": {
+          "package_name": "com.example.cully_strength_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "247341957335-b6jpa5oumb7ovvraqfcjc1ingibjpasm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlZ_wLwGu0wrjXZVTkhLeLxPTTVX_4F7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "247341957335-b6jpa5oumb7ovvraqfcjc1ingibjpasm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
